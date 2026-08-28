@@ -6,20 +6,22 @@ function seeded(i: number, salt = 1) {
   return x - Math.floor(x);
 }
 
+const r = (n: number) => Math.round(n * 100) / 100;
+
 const hearts = Array.from({ length: 14 }, (_, i) => ({
-  left: seeded(i + 1) * 96,
-  top: seeded(i + 1, 2) * 92,
-  size: 14 + seeded(i + 1, 3) * 34,
-  delay: seeded(i + 1, 4) * 8,
-  duration: 7 + seeded(i + 1, 5) * 8,
-  opacity: 0.12 + seeded(i + 1, 6) * 0.22,
+  left: r(seeded(i + 1) * 96),
+  top: r(seeded(i + 1, 2) * 92),
+  size: r(14 + seeded(i + 1, 3) * 34),
+  delay: r(seeded(i + 1, 4) * 8),
+  duration: r(7 + seeded(i + 1, 5) * 8),
+  opacity: r(0.12 + seeded(i + 1, 6) * 0.22),
 }));
 
 const sparkles = Array.from({ length: 34 }, (_, i) => ({
-  left: seeded(i + 50) * 99,
-  top: seeded(i + 50, 2) * 99,
-  size: 2 + seeded(i + 50, 3) * 4,
-  delay: seeded(i + 50, 4) * 5,
+  left: r(seeded(i + 50) * 99),
+  top: r(seeded(i + 50, 2) * 99),
+  size: r(2 + seeded(i + 50, 3) * 4),
+  delay: r(seeded(i + 50, 4) * 5),
 }));
 
 export function AmbientBackdrop({ intense = false }: { intense?: boolean }) {
