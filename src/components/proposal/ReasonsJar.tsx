@@ -16,7 +16,7 @@ const reasons = [
   "Being liked by you feels like something I want to keep earning. Every single day.",
 ];
 
-const jarHearts = Array.from({ length: 26 }, (_, i) => ({
+const jarHearts = Array.from({ length: 14 }, (_, i) => ({
   left: 8 + ((i * 29) % 76),
   bottom: 4 + ((i * 17) % 68),
   size: 10 + ((i * 13) % 12),
@@ -72,6 +72,7 @@ export function ReasonsJar() {
                   fill: "currentColor",
                   animationDelay: `${h.delay}s`,
                   animationDuration: "6s",
+                  willChange: "transform",
                 }}
               />
             ))}

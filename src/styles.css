@@ -209,6 +209,7 @@
 
 @utility animate-soft-pulse {
   animation: soft-pulse 2.4s var(--ease-silk) infinite;
+  will-change: box-shadow;
 }
 
 @keyframes drift {
@@ -225,6 +226,7 @@
 
 @utility animate-drift {
   animation: drift 9s ease-in-out infinite;
+  will-change: transform;
 }
 
 @keyframes twinkle {
@@ -241,5 +243,6 @@
 
 @utility animate-twinkle {
   animation: twinkle 3.6s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 

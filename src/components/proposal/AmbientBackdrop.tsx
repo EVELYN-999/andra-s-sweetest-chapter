@@ -8,7 +8,7 @@ function seeded(i: number, salt = 1) {
 
 const r = (n: number) => Math.round(n * 100) / 100;
 
-const hearts = Array.from({ length: 14 }, (_, i) => ({
+const hearts = Array.from({ length: 7 }, (_, i) => ({
   left: r(seeded(i + 1) * 96),
   top: r(seeded(i + 1, 2) * 92),
   size: r(14 + seeded(i + 1, 3) * 34),
@@ -17,7 +17,7 @@ const hearts = Array.from({ length: 14 }, (_, i) => ({
   opacity: r(0.12 + seeded(i + 1, 6) * 0.22),
 }));
 
-const sparkles = Array.from({ length: 34 }, (_, i) => ({
+const sparkles = Array.from({ length: 16 }, (_, i) => ({
   left: r(seeded(i + 50) * 99),
   top: r(seeded(i + 50, 2) * 99),
   size: r(2 + seeded(i + 50, 3) * 4),
@@ -40,6 +40,8 @@ export function AmbientBackdrop({ intense = false }: { intense?: boolean }) {
             animationDelay: `${h.delay}s`,
             animationDuration: `${h.duration}s`,
             fill: "currentColor",
+            willChange: "transform",
+            contain: "layout style",
           }}
         />
       ))}
@@ -53,8 +55,8 @@ export function AmbientBackdrop({ intense = false }: { intense?: boolean }) {
             width: s.size,
             height: s.size,
             animationDelay: `${s.delay}s`,
-            filter: "blur(0.5px)",
-            boxShadow: "0 0 10px currentColor",
+            willChange: "transform, opacity",
+            contain: "layout style",
           }}
         />
       ))}
