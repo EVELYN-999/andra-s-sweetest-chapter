@@ -16,9 +16,9 @@ const reasons = [
   "Because forever sounds short when I think about it with you.",
 ];
 
-const jarHearts = Array.from({ length: 22 }, (_, i) => ({
-  left: 14 + ((i * 37) % 68),
-  bottom: 6 + ((i * 23) % 44),
+const jarHearts = Array.from({ length: 26 }, (_, i) => ({
+  left: 8 + ((i * 29) % 76),
+  bottom: 4 + ((i * 17) % 68),
   size: 10 + ((i * 13) % 12),
   pink: i % 2 === 0,
   delay: (i % 7) * 0.35,
@@ -75,7 +75,7 @@ export function ReasonsJar() {
                 }}
               />
             ))}
-            <span className="absolute inset-x-0 bottom-5 text-center text-[0.6rem] tracking-[0.25em] text-latte/80 uppercase">
+            <span className="absolute inset-x-0 top-4 text-center text-[0.6rem] tracking-[0.25em] text-latte/70 uppercase">
               tap me
             </span>
           </div>
