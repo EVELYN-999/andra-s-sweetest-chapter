@@ -1,19 +1,19 @@
 import { useCallback, useState } from "react";
 import { motion } from "motion/react";
-import { Gem } from "lucide-react";
+import { Heart } from "lucide-react";
 import { AmbientBackdrop } from "./AmbientBackdrop";
 
 const noLabels = [
   "No 🙈",
-  "No? 🙈",
-  "Are you sure? 😳",
-  "Think again 🥺",
-  "Not an option 😭",
-  "Try to catch me 🏃‍♀️",
-  "Nope, wrong one 💔",
-  "Andra, please 🫠",
-  "This button is shy 🙈",
-  "Just say yes 🤎",
+  "wait, really? 🙈",
+  "are you sure though? 🥺",
+  "come on, Andra 🥺",
+  "that button is lying 😭",
+  "it keeps running away 🏃‍♀️",
+  "even the button knows 💔",
+  "please 🫠",
+  "it's scared of the answer 🙈",
+  "just say yes 🤎",
 ];
 
 export function ProposalSection({ onYes }: { onYes: () => void }) {
@@ -44,13 +44,13 @@ export function ProposalSection({ onYes }: { onYes: () => void }) {
         className="relative z-10 w-full max-w-2xl"
       >
         <span className="inline-flex items-center gap-2 rounded-full border border-blush/40 bg-cocoa-deep/50 px-4 py-1.5 text-[0.68rem] tracking-[0.28em] text-blush uppercase backdrop-blur-sm">
-          <Gem className="size-3.5" />
+          <Heart className="size-3.5" />
           the real question
         </span>
 
         <h2 className="mt-8 text-3xl leading-[1.12] text-latte sm:text-5xl">
-          Andra, will you make me the happiest person and{" "}
-          <span className="text-romance italic">spend forever</span> with me? 💍
+          Okay so… I really like you, Andra. Like{" "}
+          <span className="text-romance italic">a lot</span>. Will you be my girlfriend? 🤎
         </h2>
 
         {/* Fixed-height playground: keeps zero layout shift while the No button runs away */}
@@ -87,10 +87,10 @@ export function ProposalSection({ onYes }: { onYes: () => void }) {
 
         <p className="mt-4 text-xs tracking-[0.18em] text-latte/60 uppercase">
           {dodges === 0
-            ? "choose wisely 🤎"
+            ? "no pressure… okay maybe a little 🤎"
             : dodges < 4
-              ? "the no button seems... nervous"
-              : "see? even the buttons agree"}
+              ? "that no button really doesn't want to be clicked"
+              : "yeah, even the buttons are rooting for us"}
         </p>
       </motion.div>
     </section>

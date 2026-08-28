@@ -50,14 +50,14 @@ export function CelebrationOverlay({ onClose }: { onClose: () => void }) {
         </motion.div>
 
         <h2 className="mt-8 text-4xl leading-tight text-latte sm:text-6xl">
-          SHE SAID <span className="text-romance italic">YES!</span>
+          She said <span className="text-romance italic">yes!</span>
         </h2>
-        <p className="mt-4 text-base text-latte/80 sm:text-lg">Best day ever. 🤎✨</p>
+        <p className="mt-4 text-base text-latte/80 sm:text-lg">I'm the luckiest person right now, no contest. 🤎✨</p>
 
         <div className="mt-10 rounded-3xl border-2 border-blush/50 bg-cocoa-deep/60 p-6 backdrop-blur-sm">
           <p className="inline-flex items-center gap-2 text-[0.65rem] tracking-[0.26em] text-blush uppercase">
             <CalendarHeart className="size-3.5" />
-            forever, counting from today
+            us, from this moment
           </p>
           <div className="mt-5 grid grid-cols-4 gap-2">
             {[
@@ -77,8 +77,7 @@ export function CelebrationOverlay({ onClose }: { onClose: () => void }) {
             ))}
           </div>
           <p className="mt-6 font-display text-lg leading-relaxed text-latte/90 italic">
-            “Andra, you just made a whole future start. Dinner is on me — same place, our song
-            playing.”
+            “I promise to show up for you, make you laugh, and never let you forget how much you mean to me. This is just the start, Andra.”
           </p>
           <p className="mt-4 inline-flex items-center gap-2 text-xs text-muted-foreground">
             <Music4 className="size-3.5" />

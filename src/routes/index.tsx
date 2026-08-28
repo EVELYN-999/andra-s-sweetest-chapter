@@ -63,7 +63,7 @@ function Index() {
       </AnimatePresence>
 
       <footer className="relative z-10 px-6 pb-12 text-center text-xs tracking-[0.2em] text-muted-foreground/70 uppercase">
-        made with far too much love, for Lessandra
+        made with way too many feelings, for Lessandra
       </footer>
 
       <AnimatePresence>

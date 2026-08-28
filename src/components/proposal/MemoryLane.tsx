@@ -14,34 +14,34 @@ const chapters: Chapter[] = [
   {
     icon: Sun,
     chapter: "Chapter One",
-    title: "The first hello",
-    hint: "Tap to reveal secret",
+    title: "The moment I noticed you",
+    hint: "Tap to reveal",
     secret:
-      "I replayed that first conversation in my head all night. I already knew you were going to matter more than you should this early.",
+      "I wasn't even looking for anything. Then you showed up and suddenly I was paying attention to everything — the way you talk, the way you laugh, all of it. I didn't stand a chance.",
   },
   {
     icon: Coffee,
     chapter: "Chapter Two",
-    title: "Slow mornings & sweet talk",
-    hint: "Tap to reveal secret",
+    title: "Getting to know you",
+    hint: "Tap to reveal",
     secret:
-      "Chocolate and mornings became my favourite things because they taste like the version of me that gets to talk to you.",
+      "Every conversation with you felt like finding out something new I didn't know I needed to know. I kept wanting more. I still do.",
   },
   {
     icon: Music,
     chapter: "Chapter Three",
-    title: "That song, our song",
-    hint: "Tap to reveal secret",
+    title: "When I knew it was you",
+    hint: "Tap to reveal",
     secret:
-      "Every time it plays somewhere random, I smile like an idiot in public. You've ruined music for me in the best way.",
+      "There was this one moment — nothing big, nothing dramatic — and I just thought, yeah. It's her. It's always going to be her.",
   },
   {
     icon: Moon,
     chapter: "Chapter Four",
-    title: "Late nights, no goodbyes",
-    hint: "Tap to reveal secret",
+    title: "Every little thing",
+    hint: "Tap to reveal",
     secret:
-      "3am with you feels safer than noon with anyone else. That's when I stopped calling this a crush, Andra.",
+      "It's not one big thing, Andra. It's a hundred small ones. The way you make me feel like myself, but better. That's the thing I keep coming back to.",
   },
 ];
 
@@ -104,9 +104,9 @@ export function MemoryLane() {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-[0.7rem] tracking-[0.3em] text-blush uppercase">memory lane</p>
-          <h2 className="mt-4 text-3xl text-latte sm:text-5xl">Our Story, in little chapters</h2>
+          <h2 className="mt-4 text-3xl text-latte sm:text-5xl">How it happened, for us</h2>
           <p className="mx-auto mt-4 max-w-md text-sm text-muted-foreground sm:text-base">
-            Four cards, four soft truths. Tap each one — they're hiding something.
+            A few chapters I keep replaying. Tap each one — there's something hiding inside.
           </p>
         </div>
 

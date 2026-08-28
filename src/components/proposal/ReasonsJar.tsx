@@ -4,16 +4,16 @@ import { Heart, X } from "lucide-react";
 import { fireHearts } from "@/lib/celebrate";
 
 const reasons = [
-  "You laugh with your whole face, and it rearranges my entire day.",
-  "You make ordinary Tuesdays feel like something worth remembering.",
-  "You're the only person I want to tell boring news to.",
-  "The way you say my name is my favourite sound in any language.",
-  "You're stubborn in the exact ways that make you impossible to replace.",
-  "You steal my hoodies. I keep buying more on purpose. 🙈",
-  "You give the kind of hugs that fix things I never explained.",
-  "Even your bad moods are cuter than most people's good ones.",
-  "You make me want to be softer, braver, and better — all at once.",
-  "Because forever sounds short when I think about it with you.",
+  "The way you laugh — like you forget anyone else is watching. I never get tired of it.",
+  "You make the most boring parts of my day feel like something I actually want to be in.",
+  "I could be telling you the most pointless story and you actually listen. That means more than you know.",
+  "You're the first person I want to talk to when something happens — good, bad, or completely stupid.",
+  "You're soft and strong at the same time and I don't think you realise how rare that is.",
+  "The way you care about people — quietly, without making a big deal of it — is one of my favourite things about you.",
+  "You make me want to be more patient, more present, more everything. Not because you ask me to. Just because of who you are.",
+  "Honestly? You're just really fun to be around. Like genuinely, actually fun. 😊",
+  "You're the kind of person I'd choose again and again, even if I had every other option.",
+  "Being liked by you feels like something I want to keep earning. Every single day.",
 ];
 
 const jarHearts = Array.from({ length: 26 }, (_, i) => ({
@@ -40,9 +40,9 @@ export function ReasonsJar() {
     <section className="relative px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <p className="text-[0.7rem] tracking-[0.3em] text-blush uppercase">the reason jar</p>
-        <h2 className="mt-4 text-3xl text-latte sm:text-5xl">Reasons Why I Love You</h2>
+        <h2 className="mt-4 text-3xl text-latte sm:text-5xl">Why I like you so much</h2>
         <p className="mx-auto mt-4 max-w-sm text-sm text-muted-foreground sm:text-base">
-          Tap the jar. Pull out a reason. Repeat until you believe me.
+          I wrote these down so you'd actually believe me. Tap the jar.
         </p>
 
         <motion.button
@@ -117,7 +117,7 @@ export function ReasonsJar() {
                 onClick={pick}
                 className="mt-7 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
               >
-                One more 🤎
+                show me another 🤎
               </button>
             </motion.div>
           </motion.div>

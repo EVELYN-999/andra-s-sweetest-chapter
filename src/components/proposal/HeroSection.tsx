@@ -19,12 +19,12 @@ export function HeroSection({ onOpen }: { onOpen: () => void }) {
         </span>
 
         <h1 className="mt-8 text-4xl leading-[1.08] font-medium tracking-tight text-latte sm:text-6xl">
-          For My Favorite Person,{" "}
+          Hey my baby,{" "}
           <span className="text-romance italic">Andra</span> 🤎
         </h1>
 
         <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
-          A little corner of the internet just for you...
+          I made this for you. Every word here is genuine, and you deserve every single one of them.
         </p>
 
         <motion.button
@@ -39,7 +39,7 @@ export function HeroSection({ onOpen }: { onOpen: () => void }) {
         </motion.button>
 
         <p className="mt-10 text-xs tracking-[0.2em] text-muted-foreground/70 uppercase">
-          scroll gently, Lessandra
+          take your time, Lessandra 🤎
         </p>
       </motion.div>
     </section>
